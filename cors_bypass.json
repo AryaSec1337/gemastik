@@ -1,0 +1,29 @@
+{
+    "payloads": [
+        {
+            "header": "X-Original-URL",
+            "value": "https://evil.com",
+            "description": "Menggunakan header X-Original-URL untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Forwarded-Host",
+            "value": "https://evil.com",
+            "description": "Menggunakan header X-Forwarded-Host untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Forwarded-Scheme",
+            "value": "https",
+            "description": "Menggunakan header X-Forwarded-Scheme untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Custom-IP-Authorization",
+            "value": "127.0.0.1",
+            "description": "Menggunakan header X-Custom-IP-Authorization untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Forwarded-For",
+            "value": "127.0.0.1",
+            "description": "Menggunakan header X-Forwarded-For untuk mencoba bypass CORS."
+        }
+    ]
+}
