@@ -24,6 +24,136 @@
             "header": "X-Forwarded-For",
             "value": "127.0.0.1",
             "description": "Menggunakan header X-Forwarded-For untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Origin",
+            "value": "https://evil.com",
+            "description": "Memodifikasi header Origin untuk mencoba bypass dengan origin palsu."
+        },
+        {
+            "header": "Referer",
+            "value": "https://evil.com",
+            "description": "Menggunakan header Referer yang dimodifikasi untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Host",
+            "value": "evil.com",
+            "description": "Menggunakan header Host yang dimodifikasi untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Forwarded-Proto",
+            "value": "https",
+            "description": "Menggunakan header X-Forwarded-Proto untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Forwarded",
+            "value": "for=127.0.0.1;proto=https;host=evil.com",
+            "description": "Menggunakan header Forwarded untuk mencoba bypass CORS."
+        },
+        {
+            "header": "True-Client-IP",
+            "value": "127.0.0.1",
+            "description": "Menggunakan header True-Client-IP untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Real-IP",
+            "value": "127.0.0.1",
+            "description": "Menggunakan header X-Real-IP untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Client-IP",
+            "value": "127.0.0.1",
+            "description": "Menggunakan header X-Client-IP untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Proxy-Authorization",
+            "value": "Basic Zm9vOmJhcg==",
+            "description": "Menggunakan header Proxy-Authorization untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-WAP-Profile",
+            "value": "https://evil.com",
+            "description": "Menggunakan header X-WAP-Profile untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-DNS-Prefetch-Control",
+            "value": "on",
+            "description": "Menggunakan header X-DNS-Prefetch-Control untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Cache-Control",
+            "value": "no-cache",
+            "description": "Menggunakan header Cache-Control untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Pragma",
+            "value": "no-cache",
+            "description": "Menggunakan header Pragma untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Requested-With",
+            "value": "XMLHttpRequest",
+            "description": "Menggunakan header X-Requested-With untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Authorization",
+            "value": "Bearer malicious-token",
+            "description": "Menggunakan header Authorization dengan token palsu untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Accept",
+            "value": "application/json,text/javascript,*/*;q=0.01",
+            "description": "Menggunakan header Accept untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-CSRF-Token",
+            "value": "malicious-csrf-token",
+            "description": "Menggunakan header X-CSRF-Token untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Powered-By",
+            "value": "evil-framework",
+            "description": "Menggunakan header X-Powered-By untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Content-Type",
+            "value": "application/json",
+            "description": "Mengubah header Content-Type untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Upgrade-Insecure-Requests",
+            "value": "1",
+            "description": "Menggunakan header Upgrade-Insecure-Requests untuk mencoba bypass CORS."
+        },
+        {
+            "header": "TE",
+            "value": "trailers",
+            "description": "Menggunakan header TE untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Originating-IP",
+            "value": "127.0.0.1",
+            "description": "Menggunakan header X-Originating-IP untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Forwarded-Port",
+            "value": "443",
+            "description": "Menggunakan header X-Forwarded-Port untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Forwarded-For",
+            "value": "127.0.0.1",
+            "description": "Menggunakan header Forwarded-For untuk mencoba bypass CORS."
+        },
+        {
+            "header": "Via",
+            "value": "1.1 evil-proxy",
+            "description": "Menggunakan header Via untuk mencoba bypass CORS."
+        },
+        {
+            "header": "X-Http-Method-Override",
+            "value": "GET",
+            "description": "Menggunakan header X-Http-Method-Override untuk mencoba bypass CORS."
         }
     ]
 }
