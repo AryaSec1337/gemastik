@@ -1,0 +1,68 @@
+{
+	"wildcard value": {
+		"class": "wildcard value",
+		"description": "Server ini mengizinkan permintaan dari semua origin (*). Namun, browser akan memblokir semua permintaan ke server ini secara default.",
+		"severity": "rendah",
+		"exploitation": "Tidak mungkin dieksploitasi."
+	},
+	"third party allowed": {
+		"class": "third party allowed",
+		"description": "Server ini telah mengizinkan (whitelisted) host pihak ketiga untuk permintaan lintas origin.",
+		"severity": "sedang",
+		"exploitation": "Jika host yang diizinkan adalah platform hosting kode seperti codepen.io atau memiliki kerentanan XSS, maka kerentanan ini dapat dieksploitasi."
+	},
+	"origin reflected": {
+		"class": "origin reflected",
+		"description": "Server ini mengizinkan permintaan dari origin apa pun.",
+		"severity": "tinggi",
+		"exploitation": "Buat permintaan dari domain apa pun yang Anda kontrol."
+	},
+	"invalid value": {
+		"class": "invalid value",
+		"description": "Nilai header tidak valid. Implementasi CORS ini tidak berfungsi sama sekali.",
+		"severity": "rendah",
+		"exploitation": "Tidak mungkin dieksploitasi."
+	},
+	"post-domain wildcard": {
+		"class": "post-domain wildcard",
+		"description": "Verifikasi origin memiliki kelemahan dan mengizinkan permintaan dari host yang memiliki prefix dengan domain ini.",
+		"severity": "tinggi",
+		"exploitation": "Buat permintaan dari target.com.attacker.com"
+	},
+	"pre-domain wildcard": {
+		"class": "pre-domain wildcard",
+		"description": "Verifikasi origin memiliki kelemahan dan mengizinkan permintaan dari host yang memiliki suffix dengan domain ini.",
+		"severity": "tinggi",
+		"exploitation": "Buat permintaan dari attacker-target.com"
+	},
+	"null origin allowed": {
+		"class": "null origin allowed",
+		"description": "Server ini mengizinkan permintaan dari origin 'null'.",
+		"severity": "tinggi",
+		"exploitation": "Buat permintaan dari iframe yang disandbox."
+	},
+	"http origin allowed": {
+		"class": "http origin allowed",
+		"description": "Server ini mengizinkan berbagi resource melalui koneksi yang tidak terenkripsi (HTTP).",
+		"severity": "rendah",
+		"exploitation": "Sadap (sniff) permintaan yang dibuat melalui channel yang tidak terenkripsi."
+	},
+	"unrecognized underscore": {
+		"class": "unrecognized underscore",
+		"description": "Verifikasi origin memiliki kelemahan dan dapat dilewati menggunakan karakter underscore (_).",
+		"severity": "tinggi",
+		"exploitation": "Atur header 'Origin' ke target.com_.example.com"
+	},
+	"broken parser": {
+		"class": "broken parser",
+		"description": "Verifikasi origin memiliki kelemahan dan dapat dilewati menggunakan karakter backtick (`).",
+		"severity": "tinggi",
+		"exploitation": "Atur header 'Origin' ke %60.example.com"
+	},
+	"unescaped regex": {
+		"class": "unescaped regex",
+		"description": "Regex yang digunakan untuk verifikasi origin mengandung karakter titik (.) yang tidak di-escape.",
+		"severity": "tinggi",
+		"exploitation": "Jika target adalah sub.example.com, buat permintaan dari subxexample.com"
+	}
+}
